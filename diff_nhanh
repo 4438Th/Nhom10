@@ -1,0 +1,65 @@
+[1mdiff --git a/BT Git 2.docx b/BT Git 2.docx[m
+[1mindex d6b2d22..3ebb8ef 100644[m
+[1m--- a/BT Git 2.docx[m	
+[1m+++ b/BT Git 2.docx[m	
+[36m@@ -7,4 +7,31 @@[m [mGiải thích và cho ví dụ minh họa các câu sau[m
+  Hướng dẫn sử dụng stash[m
+  Git tag dung để làm gì? Cách dùng như thế nào?[m
+  Phân biệt revert với reset[m
+[31m- Hướng dẫn sử dụng git diff[m
+[32m+[m[32m Hướng dẫn sử dụng git diff:[m
+[32m+[m[32m      So sánh Working Director vs Staging Area:[m
+[32m+[m[32m Tạo file cau8.txt với nội dung d1, sau đó add vào Staging Area:[m
+[32m+[m[41m                                        [m
+[32m+[m[32m Thêm nội dung d2 và so sánh:[m
+[32m+[m[41m                                        [m
+[32m+[m[32m      Staging Area vs lần commit cuối cùng (HEAD):[m
+[32m+[m[32m Tạo file cau8.txt, add vào Staging Area và commit:[m
+[32m+[m[41m  [m
+[32m+[m[32m Tạo thêm file cau8_2.txt add vào Staging Area nhưng KHÔNG commit:[m
+[32m+[m[41m  [m
+[32m+[m
+[32m+[m[32m So sánh bằng git diff --staged:[m
+[32m+[m[41m  [m
+[32m+[m
+[32m+[m[32m      Working Directory vs lần commit cuối cùng (HEAD:[m
+[32m+[m[32m Sửa file cau8_1.txt và add vào Staging Area:[m
+[32m+[m[41m  [m
+[32m+[m[32m Sửa file cau8_2.txt nhưng KHÔNG add vào Staging Area:[m
+[32m+[m[41m  [m
+[32m+[m
+[32m+[m[32m   So sánh bằng git diff HEAD:[m
+[32m+[m[32m      So sánh 2 commit:[m
+[32m+[m[41m   [m
+[32m+[m[32m   (...)[m
+[32m+[m[32m      So sánh 2 nhánh:[m
+[32m+[m[32m      So sánh nhánh vs commit:[m
+[32m+[m[32m      So sánh 2 file:[m
+[1mdiff --git a/cau8.txt b/cau8.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..562890b[m
+[1m--- /dev/null[m
+[1m+++ b/cau8.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32md1[m
+\ No newline at end of file[m
+[1mdiff --git a/cau8_1.txt b/cau8_1.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..55e4cad[m
+[1m--- /dev/null[m
+[1m+++ b/cau8_1.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mcau8_1[m
+\ No newline at end of file[m
+[1mdiff --git a/cau8_2.txt b/cau8_2.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0ec982c[m
+[1m--- /dev/null[m
+[1m+++ b/cau8_2.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mcau8_2[m
+\ No newline at end of file[m
+[1mdiff --git a/~WRL0003.tmp b/~WRL0003.tmp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d6b2d22[m
+Binary files /dev/null and b/~WRL0003.tmp differ
